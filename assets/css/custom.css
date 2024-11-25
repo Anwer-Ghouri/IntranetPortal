@@ -365,6 +365,9 @@ body {
 .events_calendar{
   margin-bottom: 1.5rem;
 }
+.events_calendar .calendar_body{
+  margin-top: 0.7rem;
+}
 
 /* Quick Links */
 .quick_links{
