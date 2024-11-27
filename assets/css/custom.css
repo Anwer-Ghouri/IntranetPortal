@@ -61,10 +61,10 @@ body {
 	border-bottom: 1px solid transparent;
 }
 .main_navigation .navbar-nav .nav-item .nav-link:hover {
-	color: #cf0c2c;
+	color: #f07e23;
 }
 .main_navigation .navbar-nav .nav-item .nav-link.active {
-	color: #cf0c2c;
+	color: #f07e23;
 }
 .main_navigation .navbar-toggler{
   border: unset;
@@ -478,4 +478,101 @@ footer p{
 .innerPage .depart_tile img{
   height: 150px;
   object-fit: cover;
+}
+
+/* Documents Library */
+
+/* All documents  */
+.all_documents{
+  margin-bottom: 1.5rem;
+}
+.all_documents .departments_list{
+  max-height: 310px;
+  overflow: auto;
+  margin-top: 0.7rem;
+  padding-right: 0.7rem;
+}
+.all_documents .departments_list .circular_item h6{
+  color: #f07e23;
+  font-weight: 500;
+  font-size: 14px;
+}
+.all_documents .departments_list .circular_item p{
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 18px;
+  border-bottom: 1px solid #f7eded;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.all_documents .departments_list ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
+.all_documents .departments_list ul li{
+  border-bottom: 1px solid #e5dada;
+  line-height: normal;
+  position: relative;
+  font-weight: 500;
+  padding: 8px 0px;
+  font-size: 12px;
+  color: #f07e23;
+}
+.all_documents .departments_list ul li.active{
+  background-color: #f2f2f26e;
+}
+.all_documents .departments_list ul li.active a{
+  color: #f07e23;
+}
+.all_documents .departments_list ul li  a{
+  font-weight: 600;
+  font-size: 15px;
+  color: #121c22;
+  text-decoration: none;
+}
+.all_documents .departments_list ul li a .arrow_icon{
+  width: 20px;
+}
+
+/* Department Documents */
+.depart_documents{
+  margin-bottom: 1.5rem;
+}
+.depart_documents .doc_list{
+  max-height: 310px;
+  overflow: auto;
+  margin-top: 0.7rem;
+  padding-right: 0.7rem;
+}
+.depart_documents .doc_list .doc_item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  border-bottom: 1px solid #f7eded;
+}
+.depart_documents .doc_list .doc_item:first-child{
+  padding-top: 0px;
+}
+.depart_documents .doc_list .doc_item span{
+  color: #f07e23;
+  font-weight: 500;
+  font-size: 14px;
+}
+.depart_documents .doc_list .doc_item a{
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+}
+.depart_documents .doc_list .doc_item span{
+  display: flex;
+  gap: 10px;
+}
+.depart_documents .doc_list .doc_item span img{
+  width: 15px;
+  opacity: 0.5;
 }
