@@ -28,6 +28,7 @@ body {
 
 .web_parts{
   display: flex;
+  padding-bottom: 25px;
 }
 
 /* Scroll */
@@ -444,4 +445,37 @@ body {
   padding: 5px 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+footer {
+	background: #121c22;
+	padding: 0.5rem 0;
+}
+footer p{
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+/* Inner Page */
+
+.innerPage{
+  display: flex;
+  padding-bottom: 25px;
+}
+.innerPage .depart_tile{
+  margin-bottom: 15px;
+}
+.innerPage .depart_tile .card-title{
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+.innerPage .depart_tile img{
+  height: 150px;
+  object-fit: cover;
 }
