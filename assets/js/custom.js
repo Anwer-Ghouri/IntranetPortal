@@ -41,3 +41,5 @@ $(document).ready(function() {
     });
     $calendar = container.data('plugin_simpleCalendar')
 }); 
+
+$(".photo_gallery a").fancybox();
