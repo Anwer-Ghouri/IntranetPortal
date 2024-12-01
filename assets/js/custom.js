@@ -43,3 +43,11 @@ $(document).ready(function() {
 }); 
 
 $(".photo_gallery a").fancybox();
+
+// Temporary code 
+const departTiles = document.querySelectorAll('.depart_tile');    
+departTiles.forEach(tile => {
+    tile.addEventListener('click', () => {
+      window.location.href = 'documents_library.html';
+    });
+});
