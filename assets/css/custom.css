@@ -56,12 +56,17 @@ body {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  border-bottom: 1px solid #fff;
   padding: 0rem 0.6rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-.main_navigation .navbar-nav .nav-item .nav-link:hover {
+.main_navigation .navbar-nav .nav-item .nav-link:hover{
+  border-bottom: 1px solid #f07e23;
 	color: #f07e23;
 }
 .main_navigation .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 1px solid #f07e23;
 	color: #f07e23;
 }
 .main_navigation .navbar-toggler{

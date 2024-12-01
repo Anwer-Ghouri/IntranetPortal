@@ -32,8 +32,15 @@
             <li class="nav-item">
               <a class="nav-link active" href="documents.html">Documents</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.parco.com.pk/" target="_blank">Website</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Websites
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.parco.com.pk/" target="_blank">Parco</a></li>
+                <li><a class="dropdown-item" href="https://papco.com.pk/" target="_blank">Papco</a></li>
+                <li><a class="dropdown-item" href="https://ppgl.com.pk/" target="_blank">Pearl Gas</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -165,47 +172,32 @@
                 <h5> HSEQ Pipeline documents </h5>
               </div>
               <div class="doc_list slim_scroll">
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> BB_Departmental_Manuals </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>       
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> BB_Departmental_Manuals </a>       
                 </div>
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> B_HSEQ_Manual </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>      
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> B_HSEQ_Manual </a>     
                 </div>
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> F_HSEQ_System_Procedures </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>        
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> F_HSEQ_System_Procedures </a>        
                 </div>
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> G_HSEQ_Forms </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>        
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> G_HSEQ_Forms </a>      
                 </div>
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> H_Departmental_SOP's </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>        
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> H_Departmental_SOP's </a>       
                 </div>
-                <div class="doc_item">       
-                  <a href="javascript:void(0)"> Emergency_Response_Plans_ERP </a>
-                  <span> 
-                    <img src="assets/img/open-folder.svg"/>
-                    <img src="assets/img/download.svg"/> 
-                  </span>        
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Emergency_Response_Plans_ERP </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> G_HSEQ_Forms </a>      
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> H_Departmental_SOP's </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Emergency_Response_Plans_ERP </a>       
                 </div>
               </div>
             </div>
@@ -219,6 +211,24 @@
         <p>Copyright © 2024 PARCO. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" id="tempModal">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">BB_Departmental_Manuals</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://pdfobject.com/pdf/sample.pdf" width="100%" height="600px" style="border: none;"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/js/jquery-3.7.1.min.js"></script> 
     <script src="assets/js/bootstrap.bundle.min.js"></script> 
