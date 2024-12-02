@@ -51,3 +51,42 @@ departTiles.forEach(tile => {
       window.location.href = 'documents_library.html';
     });
 });
+
+// Slick slider 
+
+$(document).ready(function(){
+  function initSlick() {
+    if ($(window).width() >= 320 && $(window).width() <= 991) {
+      if (!$('.slick-slider').hasClass('slick-initialized')) {
+        $('.slick-slider').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+          nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: { slidesToShow: 4 }
+            },
+            {
+              breakpoint: 768,
+              settings: { slidesToShow: 3 }
+            },
+            {
+              breakpoint: 480,
+              settings: { slidesToShow: 2 }
+            }
+          ]
+        });
+      }
+    } else {
+      if ($('.slick-slider').hasClass('slick-initialized')) {
+        $('.slick-slider').slick('unslick');
+      }
+    }
+  }
+
+  initSlick();
+  $(window).resize(initSlick); // Reinitialize on window resize
+});

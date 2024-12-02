@@ -5,11 +5,12 @@
   }
   .parco_applications .main_row {
     display: flex;
-    width: 100%;
+    width: 85%;
     flex-wrap: wrap;
     gap: 4px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   .parco_applications .main_row .item{
     margin: 0rem;
@@ -85,11 +86,12 @@
   }
   .parco_applications .main_row {
     display: flex;
-    width: 100%;
+    width: 85%;
     flex-wrap: wrap;
     gap: 4px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   .parco_applications .main_row .item{
     margin: 0rem;
@@ -137,11 +139,12 @@
   }
   .parco_applications .main_row {
     display: flex;
-    width: 100%;
+    width: 85%;
     flex-wrap: wrap;
     gap: 4px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   .parco_applications .main_row .item{
     margin: 0rem;
