@@ -52,21 +52,21 @@ body {
 .main_navigation .navbar-brand {
 	padding: 0px;
 }
+.main_navigation .navbar-nav .nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .main_navigation .navbar-nav .nav-item .nav-link {
   color: #000;
   font-size: 18px;
   font-weight: 500;
   border-bottom: 1px solid #fff;
-  padding: 0rem 0.6rem;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 0rem;
 }
 .main_navigation .navbar-nav .nav-item .nav-link:hover{
-  border-bottom: 1px solid #f07e23;
 	color: #f07e23;
 }
 .main_navigation .navbar-nav .nav-item .nav-link.active {
-  border-bottom: 1px solid #f07e23;
 	color: #f07e23;
 }
 .main_navigation .navbar-toggler{
@@ -81,6 +81,29 @@ body {
 
 .main_navigation .navbar-collapse{
   padding-top: 10px;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #f07e23;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; /* Increased the duration */
 }
 
 /* Banner */
@@ -394,9 +417,6 @@ body {
 .latest_updates .updates_list .update_item:hover{
   background-color: #f28c2312;
 }
-/* .latest_updates .updates_list .update_item:first-child{
-  padding-top: 0px;
-} */
 .latest_updates .updates_list .update_item span{
   color: #f07e23;
   font-weight: 500;
@@ -438,9 +458,6 @@ body {
 .quick_links .links_body .link_item:hover{
   background-color: #f28c2312;
 }
-/* .quick_links .links_body .link_item:first-child{
-  padding-top: 0px;
-} */
 .quick_links .links_body .link_item span{
   color: #f07e23;
   font-weight: 500;
