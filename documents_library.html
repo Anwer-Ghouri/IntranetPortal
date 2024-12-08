@@ -17,7 +17,7 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white main_navigation">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="assets/img/logo-lg.png" alt="Logo" />
         </a>
@@ -29,8 +29,28 @@
             <li class="nav-item underline">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item underline">
-              <a class="nav-link active" href="documents.html">Documents</a>
+            <li class="nav-item dropdown underline">
+              <a class="nav-link dropdown-toggle active" href="documents.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Documents
+              </a>
+              <ul class="dropdown-menu nav_dropdown" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item all_doc_menu" href="documents.html">All documents</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Company Secretary</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Administration</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Pipeline</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Corporate Planning</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Supply Chain</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Lands</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Centeral Projects</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Finance</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Internal Audit</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Human Resource</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Commercial</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">DMD Office</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Security</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">MD Secretary office</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Corporate Affairs</a></li>                
+              </ul>
             </li>
             <li class="nav-item dropdown underline">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,100 +67,17 @@
       </div>
     </nav>
 
-    <!-- Banner --> 
-    <section class="site_banner">
-      <div id="carouselCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <!-- <div class="carousel-indicators"> 
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button> 
-        </div> -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/ParcoBanner_7.webp" class="banner_image" />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                    <h1 class="white"> Documents <span class="orange_color"> Library</span>. </h1>
-                    <p class="white"> Welcome to your central hub for managing and sharing essential documents. <br> Easily access, organize, and collaborate on all your important files in one convenient space. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Applications --> 
-    <section class="parco_applications">
-      <div class="container">
-        <div class="main_row slick-slider">
-          <div class="item">
-            <a href="javascript:void(0)">
-              <div class="item_img"> 
-                <img src="assets/img/icon_power_apps.png" class="img-responsive" alt="parco_app"> 
-              </div>
-              <h6 class="mb-0">Power Apps</h6>
-            </a>
-          </div>
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon_sap_ariba.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">SAP Ariba</h6>
-            </a>
-          </div>
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon-sap.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">SAP</h6>
-            </a>
-          </div>
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon_success_factor.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">Success Factor</h6>
-            </a>
-          </div>
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon_web_apps.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">Web Apps</h6>
-            </a>
-          </div>
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon_otrs.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">OTRS</h6>
-            </a>
-          </div> 
-          <div class="item">
-            <a href="javascript:void(0)">
-            <div class="item_img"> 
-              <img src="assets/img/icon_ms_365.png" class="img-responsive" alt="parco_app"> 
-            </div>
-            <h6 class="mb-0">Microsoft 365</h6>
-            </a>
-          </div>         
-        </div>
-      </div>
-    </section>
-
     <!-- Web Parts -->
-    <section class="web_parts">
+    <section class="web_parts documents_library_page">
       <div class="container">
         <div class="row">
           <!-- ==== All Documents ==== -->
+          <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+            <!-- <h1 class="white"> Documents <span class="orange_color"> Library</span>. </h1>
+            <p class="white"> Welcome to your central hub for managing and sharing essential documents. <br> Easily access, organize, and collaborate on all your important files in one convenient space. </p> -->
+            <h2> Corporate Planning </h2>
+          </div>
+
           <div class="col-lg-3 col-md-3 col-sm-12">
             <div class="all_documents">
               <div class="webpart_heading">
@@ -148,18 +85,21 @@
               </div>
               <div class="departments_list slim_scroll">
                 <ul>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Parco IMS </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> HSEQ CHQ Documents </a> </li>
-                   <li class="active"> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" style="width: 20px"> HSEQ Pipeline documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Administration documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Finance documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Human Resources Documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Supply Chain documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> HSEQ Pipeline documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Administration documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Finance documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Human Resources Documents </a> </li>
-                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Supply Chain documents </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Annual Report 2024 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Corporate Strategy 2023-2027 </a> </li>
+                   <li class="active"> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" style="width: 20px"> Market Research Report Q4 2024 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Budget Plan 2025</a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Risk Management Framework </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Compliance and Regulations 2023 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Financial Forecasting 2024 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Sustainability Goals 2023 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Mergers and Acquisitions Strategy </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 1 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 2 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 3 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 4 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 5 </a> </li>
+                   <li> <a href="javascript:void(0)"> <img src="assets/img/right_arrow.svg" class="arrow_icon"> Folder Imp 6 </a> </li>
                 </ul>
              </div>
             </div>
@@ -169,35 +109,53 @@
           <div class="col-lg-9 col-md-9 col-sm-12">
             <div class="depart_documents">
               <div class="webpart_heading">
-                <h5> HSEQ Pipeline documents </h5>
+                <h5> Market Research Report Q4 2024 </h5>
               </div>
               <div class="doc_list slim_scroll">
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> BB_Departmental_Manuals </a>       
+                  <a href="javascript:void(0)"> Industry Trends </a>       
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> B_HSEQ_Manual </a>     
+                  <a href="javascript:void(0)"> Competitive Analysis </a>     
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> F_HSEQ_System_Procedures </a>        
+                  <a href="javascript:void(0)"> Consumer Insights </a>        
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> G_HSEQ_Forms </a>      
+                  <a href="javascript:void(0)"> Regional Market Overview </a>      
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> H_Departmental_SOP's </a>       
+                  <a href="javascript:void(0)"> Cost-Benefit Analysis </a>       
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> Emergency_Response_Plans_ERP </a>       
+                  <a href="javascript:void(0)"> Emergency Response Plans </a>       
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> G_HSEQ_Forms </a>      
+                  <a href="javascript:void(0)"> Corporate Governance Policies </a>      
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> H_Departmental_SOP's </a>       
+                  <a href="javascript:void(0)"> Cost-Benefit Analysis </a>       
                 </div>
                 <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
-                  <a href="javascript:void(0)"> Emergency_Response_Plans_ERP </a>       
+                  <a href="javascript:void(0)"> Emergency Response Plans </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 1 </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 2 </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 3 </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 4 </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 5 </a>       
+                </div>
+                <div class="doc_item" data-bs-toggle="modal" data-bs-target="#tempModal">       
+                  <a href="javascript:void(0)"> Document 6 </a>       
                 </div>
               </div>
             </div>
@@ -206,18 +164,18 @@
       </div>
    </section>
 
-    <footer>
+    <!-- <footer>
       <div class="container">
         <p>Copyright © 2024 PARCO. All Rights Reserved.</p>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
     <div class="modal" tabindex="-1" id="tempModal">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">BB_Departmental_Manuals</h5>
+            <h5 class="modal-title">Market Research Report Q4 2024</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">

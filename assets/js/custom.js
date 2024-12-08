@@ -39,10 +39,11 @@ $(document).ready(function() {
             }
         ],
     });
-    $calendar = container.data('plugin_simpleCalendar')
-}); 
+    $calendar = container.data('plugin_simpleCalendar');
 
-$(".photo_gallery a").fancybox();
+    // Fancy Box 
+    $(".photo_gallery a").fancybox();
+}); 
 
 // Temporary code 
 const departTiles = document.querySelectorAll('.depart_tile');    
