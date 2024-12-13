@@ -91,3 +91,41 @@ $(document).ready(function(){
   initSlick();
   $(window).resize(initSlick); // Reinitialize on window resize
 });
+
+// Tree view js
+$(document).ready(function() {
+  const openedClass = 'fa-angle-up'; 
+  const closedClass = 'fa-angle-down';
+
+  // Initialize each of the top levels
+  $('.document_tree_view').addClass("tree");
+
+  $('.document_tree_view').find('li').has("ul").each(function () {
+    const branch = $(this);
+    branch.prepend(`<i class='indicator fa ${closedClass}'></i>`)
+          .addClass('branch')
+          .on('click', function (e) {
+            if (e.target === this) {
+              const icon = $(this).children('i:first');
+              icon.toggleClass(`${openedClass} ${closedClass}`);
+              $(this).children().children().toggle();
+            }
+          });
+
+    branch.children().children().toggle();
+  });
+
+  // Attach click event to the indicator icons
+  $('.document_tree_view').find('.branch .indicator').on('click', function () {
+    $(this).closest('li').click();
+  });
+
+  // Attach click event to anchors and buttons inside branches
+  $('.document_tree_view').find('.branch').on('click', 'a, button', function (e) {
+    $(this).closest('li').click();
+    e.preventDefault();
+  });
+
+  // Initialize specific treeviews with different classes (if needed)
+  $('#docTree').addClass("tree");
+});

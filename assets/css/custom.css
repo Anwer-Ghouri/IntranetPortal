@@ -702,3 +702,76 @@ button.slick-next.slick-arrow {
   padding-top: 50px;
   border-top: 1px solid #e4e3e3;
 }
+
+/* Tree view */
+.document_tree_view, 
+.document_tree_view ul {
+  margin:0;
+  padding:0;
+  list-style:none
+}
+.document_tree_view ul {
+  margin-left:1em;
+  position:relative
+}
+.document_tree_view ul ul {
+  margin-left:.5em
+}
+.document_tree_view ul:before {
+  content:"";
+  display:block;
+  width:0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  border-left:1px solid
+}
+.document_tree_view li {
+  margin:0;
+  padding:0 1em;
+  line-height:2em;
+  color:#121c22;
+  font-weight:500;
+  position:relative;
+  cursor: pointer;
+}
+.document_tree_view ul li:before {
+  content:"";
+  display:block;
+  width:10px;
+  height:0;
+  border-top:1px solid;
+  margin-top:-1px;
+  position:absolute;
+  top:1em;
+  left:0
+}
+.document_tree_view ul li:last-child:before {
+  background:#fff;
+  height:auto;
+  top:1em;
+  bottom:0
+}
+.indicator {
+  margin-right: 5px;
+  color: #f07e23;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+.document_tree_view li a {
+  text-decoration: none;
+  color:#121c22;
+  cursor: pointer;
+}
+.document_tree_view li button, 
+.document_tree_view li button:active, 
+.document_tree_view li button:focus {
+  text-decoration: none;
+  color:#121c22;
+  border:none;
+  background:transparent;
+  margin: 0px;
+  padding:0px;
+  outline: 0;
+}
